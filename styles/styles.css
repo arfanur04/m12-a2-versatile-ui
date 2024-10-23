@@ -282,8 +282,12 @@ body {
 	padding-left: 32px;
 	padding-right: 32px;
 }
+.run-img-box img {
+	width: 100%;
+}
 .run-img {
 	width: 100%;
+	max-width: 35vw;
 	border-radius: 16px;
 }
 
