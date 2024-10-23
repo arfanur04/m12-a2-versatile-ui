@@ -38,6 +38,26 @@ body {
 	padding: 0 16px;
 }
 
+.section-margin {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.section-title {
+	font-size: 40px;
+	font-weight: 900;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.section-des {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 48px;
+}
+
 .primary-color {
 	color: var(--primary-color);
 }
@@ -83,13 +103,31 @@ body {
 .gap-8px {
 	gap: 8px;
 }
-
 .gap-16px {
 	gap: 16px;
 }
-
 .gap-32px {
 	gap: 32px;
+}
+
+.margin-top-8px {
+	margin-top: 8px;
+}
+.margin-top-16px {
+	margin-top: 16px;
+}
+.margin-top-32px {
+	margin-top: 32px;
+}
+
+.margin-bottom-8px {
+	margin-bottom: 8px;
+}
+.margin-bottom-16px {
+	margin-bottom: 16px;
+}
+.margin-bottom-32px {
+	margin-bottom: 32px;
 }
 
 .justify-center {
@@ -201,6 +239,30 @@ body {
 .banner-300p-des {
 	color: rgba(255, 255, 255, 0.65);
 }
+
+/* --------------------------- Change Your Habits --------------------------- */
+.change-habits-card-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+}
+
+.change-habits-img {
+	border-radius: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.change-habits-name {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+.change-habits-des {
+	color: rgba(255, 255, 255, 0.5);
+}
+
 /* ------------------------------- mobile view ------------------------------ */
 @media screen and (max-width: 576px) {
 	/* --------------------------------- navbar --------------------------------- */
@@ -232,5 +294,14 @@ body {
 
 	.banner-500p-des {
 		font-size: 10px;
+	}
+
+	.section-title {
+		font-size: 32px;
+	}
+
+	/* --------------------------- Change Your Habits --------------------------- */
+	.change-habits-card-container {
+		grid-template-columns: 1fr;
 	}
 }
