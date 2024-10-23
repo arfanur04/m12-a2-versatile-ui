@@ -191,6 +191,12 @@ body {
 	color: #ffffff80;
 }
 
+.banner .primary-btn,
+.secondary-btn {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
 .banner-img-section {
 	position: relative;
 }
@@ -263,6 +269,24 @@ body {
 	color: rgba(255, 255, 255, 0.5);
 }
 
+/* ------------------------------- Run section ------------------------------ */
+.run-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	background: rgb(34, 34, 34);
+	padding: 32px;
+	border-radius: 16px;
+}
+.run-btn {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+.run-img {
+	width: 100%;
+	border-radius: 16px;
+}
+
 /* ------------------------------- mobile view ------------------------------ */
 @media screen and (max-width: 576px) {
 	/* --------------------------------- navbar --------------------------------- */
@@ -296,6 +320,11 @@ body {
 		font-size: 10px;
 	}
 
+	banner .primary-btn,
+	.secondary-btn {
+		padding: 12px 16px;
+	}
+
 	.section-title {
 		font-size: 32px;
 	}
@@ -303,5 +332,13 @@ body {
 	/* --------------------------- Change Your Habits --------------------------- */
 	.change-habits-card-container {
 		grid-template-columns: 1fr;
+	}
+
+	/* ------------------------------- Run section ------------------------------ */
+	.run-section {
+		grid-template-columns: 1fr;
+	}
+	.run-btn {
+		width: 100%;
 	}
 }
