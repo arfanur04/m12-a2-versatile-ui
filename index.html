@@ -8,6 +8,11 @@
 		/>
 		<title>Versatile UI</title>
 		<link
+			rel="shortcut icon"
+			href="./images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -24,10 +29,10 @@
 			<!-- ------------------------------- navbar -------------------------------- -->
 			<nav class="nav-main">
 				<h3 class="primary-color nav-website-name">Fitness</h3>
-				<section class="display-flex align-center">
+				<section class="flex align-center">
 					<i class="fa-solid fa-bars display-none"></i>
 					<ul class="nav-items">
-						<li class="nav-item nav-home">Home</li>
+						<li class="nav-item primary-btn">Home</li>
 						<li class="nav-item">Service</li>
 						<li class="nav-item">Contact</li>
 						<li class="nav-item">About</li>
@@ -36,7 +41,43 @@
 			</nav>
 
 			<!-- ------------------------------- banner -------------------------------- -->
-			<div class="banner">banner</div>
+			<div class="banner align-center gap-32px">
+				<section class="banner-content flex flex-col gap-16px">
+					<h1 class="banner-title">
+						Get body in <br />
+						<span class="dancing-script-font">shape</span> & stay <br />
+						healthy
+					</h1>
+					<p class="banner-description">
+						A huge selection of health and fitness content, healthy recipes and
+						transformation stories to help you get fit and stay fit!
+					</p>
+					<div class="banner-btn-group flex gap-8px">
+						<button class="primary-btn">Join Club Now!</button>
+						<button class="secondary-btn">Download app</button>
+					</div>
+				</section>
+				<section class="banner-img-section flex justify-center">
+					<picture>
+						<img
+							class="banner-img"
+							src="./images/Images_2.png"
+							alt=""
+						/>
+					</picture>
+					<div class="banner-500p">
+						<h3>500+</h3>
+						<p class="banner-500p-des">Free Workout Videos</p>
+					</div>
+					<div class="banner-300p flex align-center gap-16px">
+						<i class="fa-solid fa-circle-play banner-300p-red-ball"></i>
+						<div>
+							<h4>350+</h4>
+							<p class="banner-300p-des">Video Tutorial</p>
+						</div>
+					</div>
+				</section>
+			</div>
 		</header>
 		<main></main>
 		<footer></footer>
