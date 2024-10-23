@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ---------------------------------- font ---------------------------------- */
+.inter-font {
+	font-family: "Inter", serif;
+	font-optical-sizing: auto;
+	/* // <weight>: Use a value from 100 to 900 */
+	font-style: normal;
+}
+
+.dancing-script-font {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	/* // <weight>: Use a value from 400 to 700 */
+	font-style: normal;
+}
+
+/* --------------------------------- common --------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+:root {
+	--primary-color: #e6533c;
+}
+
+.max-width {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.primary-color {
+	color: var(--primary-color);
+}
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.margin-right-16px {
+	margin-right: 16px;
+}
+
+/* --------------------------------- navbar --------------------------------- */
+.nav-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0 50px 10px;
+}
+
+.nav-main .nav-website-name {
+	font-size: 36px;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.nav-main ul {
+	display: flex;
+	align-items: center;
+}
+
+.nav-main li {
+	list-style-type: none;
+	font-weight: bold;
+	margin-right: 24px;
+}
+
+.nav-main .nav-home {
+	background-color: var(--primary-color);
+	padding: 8px 16px;
+	border-radius: 50px;
+}
+
+/* --------------------------------- banner --------------------------------- */
+
+/* ------------------------------- mobile view ------------------------------ */
+@media screen and (max-width: 576px) {
+	/* --------------------------------- navbar --------------------------------- */
+	.nav-main {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.nav-main .fa-bars {
+		display: block;
+	}
+
+	.nav-main ul {
+		display: none;
+	}
+
+	/* --------------------------------- banner --------------------------------- */
+}
