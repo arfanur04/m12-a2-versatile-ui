@@ -394,6 +394,18 @@ td {
 	font-size: 12px;
 }
 
+/* ------------------------------- faq section ------------------------------ */
+.faq-section {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.faq-item {
+	margin-bottom: 24px;
+}
+.faq-item p {
+	color: var(--secondary-color);
+}
+
 /* --------------------------------- footer --------------------------------- */
 .footer-container {
 	display: grid;
