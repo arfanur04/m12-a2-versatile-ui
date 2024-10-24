@@ -293,6 +293,59 @@ body {
 	border-radius: 16px;
 }
 
+/* ------------------------------- bmi section ------------------------------ */
+.bmi-main {
+	background: rgb(34, 34, 34);
+	padding: 50px 0;
+}
+.bmi-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 32px;
+}
+.bmi-chart-title {
+	margin-bottom: 32px;
+	font-size: 28px;
+}
+.bmi-main table {
+	width: 90%;
+	text-align: left;
+	border-collapse: collapse;
+}
+.bmi-main td {
+	color: rgba(255, 255, 255, 0.5);
+}
+.bmi-main th,
+td {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 6px;
+	font-size: 12px;
+}
+.bmi-calc-title {
+	font-size: 28px;
+}
+.bmi-calc-des {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.bmi-calc-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+}
+.bmi-calc-select-an {
+	grid-column: 1 / span 2;
+}
+.bmi-main input {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	padding-left: 16px;
+	border-radius: 8px;
+	border: none;
+}
+
 /* ------------------------------ meet section ------------------------------ */
 .run-section-card-container {
 	display: grid;
@@ -446,5 +499,10 @@ body {
 	}
 	.footer-column {
 		margin-left: 32px;
+	}
+
+	/* ------------------------------- bmi section ------------------------------ */
+	.bmi-container {
+		grid-template-columns: 1fr;
 	}
 }
