@@ -30,6 +30,7 @@ body {
 
 :root {
 	--primary-color: #e6533c;
+	--secondary-color: rgba(255, 255, 255, 0.5);
 }
 
 .max-width {
@@ -61,7 +62,9 @@ body {
 .primary-color {
 	color: var(--primary-color);
 }
-
+.secondary-color {
+	color: var(--secondary-color);
+}
 .primary-btn {
 	background: var(--primary-color);
 	color: #fff;
@@ -338,6 +341,40 @@ body {
 	font-size: 12px;
 }
 
+/* --------------------------------- footer --------------------------------- */
+.footer-container {
+	display: grid;
+	grid-template-columns: 2fr repeat(2, 1fr);
+	gap: 16px;
+	padding: 50px 0;
+}
+.footer-title {
+	font-size: 70px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.footer-des {
+	width: 80%;
+	font-size: 12px;
+}
+.footer-col-title {
+	margin-bottom: 24px;
+}
+.footer-col-link {
+	list-style: none;
+	margin-top: 12px;
+}
+.footer-col-link a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.footer-hr {
+	border-color: var(--secondary-color);
+}
+
 /* -------------------------------------------------------------------------- */
 /* ------------------------------- mobile view ------------------------------ */
 /* -------------------------------------------------------------------------- */
@@ -398,5 +435,16 @@ body {
 	/* ------------------------------ meet section ------------------------------ */
 	.run-section-card-container {
 		grid-template-columns: 1fr;
+	}
+
+	/* --------------------------------- footer --------------------------------- */
+
+	.footer-container {
+		grid-template-columns: 1fr;
+		gap: 64px;
+		padding-top: 0px;
+	}
+	.footer-column {
+		margin-left: 32px;
 	}
 }
