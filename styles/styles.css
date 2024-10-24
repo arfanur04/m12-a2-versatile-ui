@@ -287,11 +287,60 @@ body {
 }
 .run-img {
 	width: 100%;
-	max-width: 35vw;
 	border-radius: 16px;
 }
 
+/* ------------------------------ meet section ------------------------------ */
+.run-section-card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+.run-section-card {
+	height: 272px;
+	background-color: rgb(0, 0, 0, 0.2);
+	background-blend-mode: overlay;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 16px;
+}
+.run-card-1-img {
+	background-image: url("../images/trainer1.png");
+}
+.run-card-2-img {
+	background-image: url("../images/trainer2.png");
+}
+.run-card-3-img {
+	background-image: url("../images/trainer3.png");
+}
+.run-card-4-img {
+	background-image: url("../images/trainer4.png");
+}
+.run-card-5-img {
+	background-image: url("../images/trainer5.png");
+}
+.run-card-6-img {
+	background-image: url("../images/trainer6.png");
+}
+.run-card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: end;
+	height: 272px;
+	padding-left: 16px;
+	padding-bottom: 16px;
+	border-radius: 16px;
+}
+.run-card-occupation {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------- */
 /* ------------------------------- mobile view ------------------------------ */
+/* -------------------------------------------------------------------------- */
 @media screen and (max-width: 576px) {
 	/* --------------------------------- navbar --------------------------------- */
 	.nav-main {
@@ -344,5 +393,10 @@ body {
 	}
 	.run-btn {
 		width: 100%;
+	}
+
+	/* ------------------------------ meet section ------------------------------ */
+	.run-section-card-container {
+		grid-template-columns: 1fr;
 	}
 }
